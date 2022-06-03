@@ -1,3 +1,7 @@
 <resources>
-    <string name="app_name">Contrôle_continu2</string>
+    <string name="app_name"> menue générale</string>
+
+    <string name="Ajouter"> Ajouter une Societe</string>
+    <string name="Editer"> Editer une Societe</string>
+    <string name="listerv"> lister toot les  Societe</string>
 </resources>
