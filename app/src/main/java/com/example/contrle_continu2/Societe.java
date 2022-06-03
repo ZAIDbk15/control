@@ -6,7 +6,7 @@ public class Societe implements Serializable {
 
 
 
-    public  int id;
+    public  int id ;
     public String nom;
     public  String Sec_Activité;
     public int nb_emp;
