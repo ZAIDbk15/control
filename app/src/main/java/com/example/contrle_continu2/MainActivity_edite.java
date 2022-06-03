@@ -31,7 +31,7 @@ public class MainActivity_edite extends AppCompatActivity {
         db=new MyDatabase(this);
 
 
-       ArrayList<Societe> ss=MyDatabase.getAllSociete(db.getReadableDatabase());
+      ss=MyDatabase.getAllSociete(db.getReadableDatabase());
         ArrayList<String> lst=new ArrayList<>();
         for (Societe s:ss){
             lst.add(String.valueOf(s.getId()));
@@ -63,5 +63,9 @@ public class MainActivity_edite extends AppCompatActivity {
     }
 
     public void sup(View view) {
+
+        int ii=ss.get(sp1.getId()).getId();
+        MyDatabase.delete_Societe(db.getWritableDatabase(),ss.get(sp1.getId()).getId());
+        ad.remove(String.valueOf(ii));
     }
 }
