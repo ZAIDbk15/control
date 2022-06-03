@@ -31,6 +31,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/txt_nbEmploye"
         android:layout_marginTop="36dp"
+        android:onClick="enregistre"
         android:text="@string/Enregistr" />
 
     <Button
