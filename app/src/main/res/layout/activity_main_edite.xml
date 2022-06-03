@@ -37,25 +37,25 @@
         android:id="@+id/txt_nbEmploye"/>
 
     <Button
-        android:id="@+id/btn_addNew"
+        android:id="@+id/btn_mod"
         style="@style/btn_style2"
         android:layout_width="147dp"
         android:layout_height="wrap_content"
         android:layout_below="@id/txt_nbEmploye"
         android:layout_marginTop="36dp"
-        android:onClick="enregistre"
-        android:text="@string/Enregistr" />
+        android:onClick="modifier"
+        android:text="@string/sup" />
 
     <Button
-        android:id="@+id/btn_anullerelNewS"
+        android:id="@+id/btn_supp"
         style="@style/btn_style2"
         android:layout_width="192dp"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@id/btn_addNew"
+        android:layout_alignBaseline="@id/btn_mod"
         android:layout_marginLeft="21dp"
-        android:layout_toRightOf="@id/btn_addNew"
-        android:text="@string/Anuuler"
-        android:onClick="anuller"
+        android:layout_toRightOf="@id/btn_mod"
+        android:text="@string/modifer"
+        android:onClick="sup"
         />
 
 </RelativeLayout>

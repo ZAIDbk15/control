@@ -7,4 +7,6 @@
 
     <string name="Enregistr">Enregistr</string>
     <string name="Anuuler">Annuler</string>
+    <string name="sup">suppremer</string>
+    <string name="modifer">modifier</string>
 </resources>
