@@ -38,7 +38,7 @@ public class MainActivity_edite extends AppCompatActivity {
         }
      ArrayAdapter<String> ad=new ArrayAdapter<>(this, android.R.layout.simple_spinner_dropdown_item,lst);
         sp1.setAdapter(ad);
-        return sp1.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+     /*   return sp1.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
                 Societe s = ss.get(i);
@@ -52,7 +52,7 @@ public class MainActivity_edite extends AppCompatActivity {
 
             }
 
-        };
+        };*/
     }
 
     public void modifier(View view) {
@@ -64,8 +64,8 @@ public class MainActivity_edite extends AppCompatActivity {
 
     public void sup(View view) {
 
-        int ii=ss.get(sp1.getId()).getId();
+       /* int ii=ss.get(sp1.getId()).getId();
         MyDatabase.delete_Societe(db.getWritableDatabase(),ss.get(sp1.getId()).getId());
-        ad.remove(String.valueOf(ii));
+        ad.remove(String.valueOf(ii));*/
     }
 }
