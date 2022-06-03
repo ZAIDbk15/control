@@ -1,5 +1,6 @@
 package com.example.contrle_continu2;
 
+import android.content.ContentValues;
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
@@ -33,5 +34,15 @@ public class MyDatabase extends SQLiteOpenHelper {
         String sql= "DROP TABLE " + TABLE_NAME;
         sqLiteDatabase.execSQL(sql);
         onCreate(sqLiteDatabase);
+    }
+
+    public static long insert_Societe(SQLiteDatabase sqLiteDatabase, Societe s){
+        ContentValues c = new ContentValues();
+        c.put(COL1,s.getId());
+        c.put(COL2,s.getId());
+        c.put(COL3,s.getNom());
+        c.put(COL4,s.getSec_Activité());
+
+        return sqLiteDatabase.insert(TABLE_NAME,null,c);
     }
 }
