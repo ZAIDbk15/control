@@ -4,4 +4,7 @@
     <string name="Ajouter"> Ajouter une Societe</string>
     <string name="Editer"> Editer une Societe</string>
     <string name="listerv"> lister toot les  Societe</string>
+
+    <string name="Enregistr">Enregistr</string>
+    <string name="Anuuler">Annuler</string>
 </resources>
