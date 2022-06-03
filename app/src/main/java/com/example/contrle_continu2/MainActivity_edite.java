@@ -25,9 +25,11 @@ public class MainActivity_edite extends AppCompatActivity {
         secteur=findViewById(R.id.txt_secteur);
         nb=findViewById(R.id.txt_nbEmploye);
         btn_eng=findViewById(R.id.btn_mod);
+        ArrayList<Societe> ss;
         btn_anuler=findViewById(R.id.btn_supp);
         sp1=findViewById(R.id.sp1);
         db=new MyDatabase(this);
+
 
        ArrayList<Societe> ss=MyDatabase.getAllSociete(db.getReadableDatabase());
         ArrayList<String> lst=new ArrayList<>();
@@ -54,7 +56,9 @@ public class MainActivity_edite extends AppCompatActivity {
     }
 
     public void modifier(View view) {
-
+        ArrayList<Societe> ss=MyDatabase.getAllSociete(db.getReadableDatabase());
+        Societe s=new Societe(ss.get(sp1.getId()).getId(),nom_s.getText().toString(),secteur.getText().toString(),Integer.valueOf(nb.getText().toString()));
+        MyDatabase.update_Societe(db.getWritableDatabase(),s);
 
     }
 
