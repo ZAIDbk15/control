@@ -45,4 +45,13 @@ public class MyDatabase extends SQLiteOpenHelper {
 
         return sqLiteDatabase.insert(TABLE_NAME,null,c);
     }
+
+    public static long update_Societe(SQLiteDatabase sqLiteDatabase, Societe s){
+        ContentValues c = new ContentValues();
+        c.put(COL1,s.getId());
+        c.put(COL2,s.getId());
+        c.put(COL3,s.getNom());
+        c.put(COL4,s.getSec_Activité());
+        return sqLiteDatabase.update(TABLE_NAME,c,"id="+s.getId(),null);
+    }
 }
