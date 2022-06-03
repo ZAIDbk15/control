@@ -13,6 +13,7 @@
       android:text="@string/Ajouter"
       android:textSize="20sp"
       android:id="@+id/btn_ajouter"
+
       android:layout_margin="20dp"
 
       />
@@ -22,6 +23,7 @@
         android:text="@string/Editer"
         android:textSize="20sp"
         android:id="@+id/btn_Editer"
+
         android:layout_margin="20dp"
 
 
@@ -32,6 +34,7 @@
         android:text="@string/listerv"
         android:textSize="20sp"
         android:id="@+id/btn_lister"
+
         android:layout_margin="20dp"
 
         />
