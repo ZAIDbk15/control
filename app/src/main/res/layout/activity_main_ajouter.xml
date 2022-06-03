@@ -8,15 +8,16 @@
     >
 
     <EditText
+        android:id="@+id/txt_nom"
         style="@style/edite_style1"
-        android:hint="Tapez le nom de la societe"
         android:layout_alignParentTop="true"
-        android:id="@+id/txt_nom"/>
+        android:hint="Tapez le nom de la societe" />
+
     <EditText
+        android:id="@+id/txt_secteur"
         style="@style/edite_style1"
-        android:hint="Tapez le secteur d'activite'"
         android:layout_below="@id/txt_nom"
-        android:id="@+id/txt_secteur"/>
+        android:hint="Tapez le secteur d'activite'" />
     <EditText
         style="@style/edite_style1"
         android:hint="Tapez le nombre d'employe"
@@ -24,22 +25,24 @@
         android:id="@+id/txt_nbEmploye"/>
 
     <Button
-        android:id="@+id/btn_addNewS"
+        android:id="@+id/btn_addNew"
         style="@style/btn_style2"
         android:layout_width="147dp"
         android:layout_height="wrap_content"
         android:layout_below="@id/txt_nbEmploye"
-        android:layout_marginTop="82dp"
+        android:layout_marginTop="36dp"
         android:text="@string/Enregistr" />
 
     <Button
-        android:id="@+id/btn_cancelNewS"
+        android:id="@+id/btn_anullerelNewS"
         style="@style/btn_style2"
         android:layout_width="192dp"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@id/btn_addNewS"
+        android:layout_alignBaseline="@id/btn_addNew"
         android:layout_marginLeft="21dp"
-        android:layout_toRightOf="@id/btn_addNewS"
-        android:text="@string/Anuuler" />
+        android:layout_toRightOf="@id/btn_addNew"
+        android:text="@string/Anuuler"
+        android:onClick="anuller"
+        />
 
 </RelativeLayout>
